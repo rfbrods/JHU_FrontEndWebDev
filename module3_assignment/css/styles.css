@@ -1,0 +1,75 @@
+
+#header-nav {
+	background-color: darkgray;
+}
+
+.navbar-header {
+	height: 100px;
+}
+
+.navbar-brand, h1 {
+	color: black;
+	text-align: left;
+}
+
+.navbar-nav>li>a {
+	color: white;
+}
+
+a {
+	text-align: center;
+}
+
+
+#nav-list a {
+	background-color: lightgray;
+}
+
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.title-container {
+	padding-bottom: 20px;
+}
+
+.menu-item-container {
+  height: 750px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+.menu-title-container {
+	background-color: darkgray;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.menu-title {
+	font-size: 135%;
+}
+
+.menu-content {
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
