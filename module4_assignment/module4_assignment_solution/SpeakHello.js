@@ -4,9 +4,16 @@
 (function (window) {
   var helloSpeaker = {};
   var speakWord = "Hello";
+  
+  // speak method
   helloSpeaker.speak = function(name) {
     console.log(speakWord + " " + name);
   }
+  // speak simple method
+  helloSpeaker.speakSimple = function(name) {
+    return speakWord + " " + name;
+  }
+
   window.helloSpeaker = helloSpeaker;
 
 })(window);

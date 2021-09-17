@@ -6,9 +6,16 @@
 (function (window) {
   var byeSpeaker = {};
   var speakWord = "Good Bye";
+  
+  // speak method
   byeSpeaker.speak = function(name) {
     console.log(speakWord + " " + name);
   }
+  // speak simple method
+  byeSpeaker.speakSimple = function(name) {
+    return speakWord + " " + name;
+  }
+
   window.byeSpeaker = byeSpeaker;
 
 })(window);

@@ -48,6 +48,28 @@ WARNING!!! WARNING!!!
       helloSpeaker.speak(name);
     }
   }
+
+  // define a function which returns the correct greeting given a name
+  // "Good Bye" if name starts with J
+  // "Hello" if name does not start with J
+  function greeting(name) {    
+    var first_letter = (name.charAt(0)).toLowerCase();
+    
+    if (first_letter === 'j') {
+      return byeSpeaker.speakSimple(name);
+    } else {
+      return helloSpeaker.speakSimple(name);
+    }
+  }; 
+
+  // create a new array using the above mapping function
+  var namesGreeting = names.map(greeting);
+
+  // print out the 
+  for (var i = 0; i < namesGreeting.length; i++) {
+    console.log(namesGreeting[i]);
+  }
+
 })(window);
 
 
