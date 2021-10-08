@@ -15,14 +15,21 @@
     <div class="form-group">
       <input type="text" placeholder = "search term" ng-model="list.searchTerm" class="form-control">
     </div>
-    <div class="form-group narrow-button">
-      <button class="btn btn-primary" ng-click="list.logFoundItems(list.searchTerm);">Narrow It Down For Me!</button>
+    <div class="form-group">
+      <button class="btn btn-primary narrow-button" ng-click="list.addItems(list.searchTerm);">Narrow It Down For Me!</button>
     </div>
 
-    <found-items 
-      items="list.items"
-      on-remove="list.removeItem(index)">   
-    </found-items>
+    <div ng-hide="list.error">
+      <found-items 
+        items="list.items"
+        on-remove="list.removeItem(index)">   
+      </found-items>
+    </div>
+
+
+    <div ng-if="list.error">
+      Nothing found!
+    </div>
   </div>
 
 </body>

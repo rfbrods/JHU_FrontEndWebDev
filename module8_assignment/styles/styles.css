@@ -6,9 +6,13 @@ input[type="text"] {
   float: left;
 }
 .narrow-button {
-  float: left;
   margin-left: 10px;
 }
+
+.list-item {
+  margin: 10px;
+}
+
 .loader {
   display: none;
   margin-left: 5px;
