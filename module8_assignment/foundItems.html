@@ -1,0 +1,9 @@
+<div>
+  <ol>
+    <li ng-repeat="item in list.items">
+      {{item.name}}
+      <button ng-click="list.onRemove({index: $index});">Remove Item</button>
+    </li>
+  </ol>
+</div>
+
