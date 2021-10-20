@@ -13,33 +13,28 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   // *** Set up UI states ***
   $stateProvider
 
-  // Home page
+ // Home page
   .state('home', {
     url: '/',
-    templateUrl: 'index.html'
+    templateUrl: 'src/menuApp/templates/home.template.html'
   })
 
-
-    // Premade list page
+  // Category Page
   .state('categoryList', {
     url: '/category-list',
-    templateUrl: 'src/menuApp/templates/categorieslist.template.html',
-    controller: 'CategoryController as catCtrl',
+    templateUrl: 'src/menuApp/templates/category-list.template.html'/*,
+    controller: 'CategoryListController as catCtrl',
     resolve: {
       categories: ['MenuDataService', function (MenuDataService) {
         return MenuDataService.getAllCategories();
       }]
-    }
+    }*/
   })
 
-  // Item detail
+    // Category Page
   .state('categoryItems', {
-    url: '/category-items/{category}',
-    templateUrl: 'src/menuAapp/templates/category-items.template.html',
-    controller: 'CategoryItemsController as itemsCtrl', 
-    params: {
-      category: null
-    }
+    url: '/category-items',
+    templateUrl: 'src/menuApp/templates/category-items.template.html'
   });
   
 
