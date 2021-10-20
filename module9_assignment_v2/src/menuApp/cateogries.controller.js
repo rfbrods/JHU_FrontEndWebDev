@@ -11,3 +11,4 @@ function CategoriesController(categories) {
 }
 
 })();
+
