@@ -12,8 +12,7 @@ function MenuDataService($http) {
 
   service.getAllCategories = function () {
     console.log("I'm in get all categories");
-    return 'Im the category list';
-    /*api_endpoint = "https://davids-restaurant.herokuapp.com/categories.json"; 
+    /pi_endpoint = "https://davids-restaurant.herokuapp.com/categories.json"; 
     return $http({
             method: "GET",
             url: (api_endpoint)
@@ -21,7 +20,7 @@ function MenuDataService($http) {
               console.log(response.data)
               var categories = response.data; 
               return categories;
-    });*/
+    });
   };
 
 }
