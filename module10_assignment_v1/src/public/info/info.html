@@ -1,0 +1,32 @@
+<div class="container">
+  
+  <h1>Welcome to your info page!</h1> <br>
+  <div ng-if="info.registered == false"> 
+    Not signed up yet.
+    <a ui-sref="public.signup">
+      Sign Up Now!
+    </a>
+  </div>
+
+
+  <div ng-if="info.registered == true">
+    <h3>Your registration info:</h3> <br>
+    <div> <b> Name:</b> {{ info.first }} {{ info.last }} </div>
+    <div> <b>Email: </b> {{ info.email }} </div>
+    <div> <b> Phone: </b> {{ info.phone }} </div> 
+    <div> <b> Favorite Dish Short Name: </b> {{ info.dish }} </div> <br>
+
+    <h3> Favorite Dish: </b> {{ info.dish_item.name }}</h3> 
+    <div> Dish description: {{info.dish_item.description}}</div> <br>
+    <div style="align-items: left;">
+      <div>
+        <img width="250" height="150" ng-src="https://rbrodsky-jhu-frontend.herokuapp.com/images/{{info.dish_item.short_name}}.jpg" alt="{{info.dish_item.name}}">
+    </div>
+    </div>
+
+  </div>
+
+
+
+
+</div>
